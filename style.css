@@ -53,16 +53,23 @@ li {
 
 }
 table {
-   height: 40%;
+  height: 40%;
   left: 10%;
   margin: 20px auto;
   overflow-y: scroll;
   position: static;
   width: 40%;
 }
-
-img {
+figure {
+  display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption {
+  color: #FFF;
+  font-family: 'Oxygen', sans-serif;
+
 }
 .centered {
   text-align: center;
