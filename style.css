@@ -1,5 +1,5 @@
 body {
-  background: #493ba1;
+  background-image: linear-gradient(to right, rgb(78, 124, 255) , rgb(189, 131, 249) );
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,7 @@ h1, h2, p {
 
 nav {
   box-sizing: border-box;
-  background-color: #c5d9f9;
+  background-image: linear-gradient(to right, rgb(197, 217, 249), rgb(255, 217, 255));
   overflow: auto;
   padding: 18px 50px;
   position: relative;
@@ -72,6 +72,9 @@ figcaption {
   font-family: 'Oxygen', sans-serif;
 
 }
+#title {
+  font-family: 'URW Chancery L', cursive;
+}
 .centered {
   text-align: center;
 }
@@ -82,8 +85,8 @@ figcaption {
 
 .findme {
   color: #493ba1;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'URW Chancery L', cursive;
   padding: 5px 5px 5px 5px;
-  background-color: #c5d9f9;
+  background-image: linear-gradient(to right, rgb(197, 217, 249), rgb(255, 217, 255));
   text-align: center;
 }
