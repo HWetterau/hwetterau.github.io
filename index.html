@@ -1,55 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <!-- I'm just messing around here-->
   <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Hannah Wetterau"/>
     <title>
       Hannah's website
     </title>
      <link href="style.css" type="text/css" rel="stylesheet"/>
+     <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet'>
   </head>
   <body>
     <nav>
-      <a class="active">home</a>
-      <a href="./about.html">about</a>
-      <a href="./resume.html">resume</a>
+      <a href="./index.html" class="nav-active">HOME</a>
+      <a href="./about.html" class="nav-inactive">ABOUT</a>
+      <a href="./resume.html" class="nav-inactive" >RESUME</a>
+      <a href="./archive.html" class="nav-inactive" >ARCHIVE</a>
     </nav>
-    <h1 id = "title">Things I've been working on</h1>
-    <h2 id = "title">Demos</h2>
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoKxfiLJBfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/D-eRg2U2Hq8"
-       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-       picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/kACsFXbNCH0"
-       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-       picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/f_iWp0wQD38"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-        picture-in-picture" allowfullscreen></iframe>
-    </p>
-    <h2 id = "title">Animations</h2>
-    <div class="centered">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7NTxPj76pvA"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-        picture-in-picture" allowfullscreen>A 2D animation of a robot building a snowman</iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/UHVvwgmFZow"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-        picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <h2 id = "title">3D Models</h2>
-    <div class="centered">
-      <div class="sketchfab-embed-wrapper">
-        <iframe title="A 3D model" width="560" height="315"
-          src="https://sketchfab.com/models/fc5b3a52c16b40ef8970971c40bca041/embed"
-          frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
-          webkitallowfullscreen="true"></iframe>
-        <iframe title="A 3D model" width="560" height="315"
-          src="https://sketchfab.com/models/5c2f59c5d9404b559e20bbe7a83c44a8/embed"
-          frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true"
-          webkitallowfullscreen="true"></iframe>
-        <iframe title="A 3D model" width="560" height="315" src="https://sketchfab.com/models/9dfd90bea76b41d29914c511829f67eb/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </div>
+    <main>
+      <h1>Projects</h1>
+      <section>
+        <h2>Games</h2>
+          <article class="game-entry">
+            <h3>Gorilla Tag</h3>
+            <img src="images/gt.jpg" alt="Gorilla Tag" width="400">
+            <div class="platforms-box">
+              <a href="https://www.meta.com/experiences/gorilla-tag/4979055762136823/">Meta Quest</a>
+              <a href="https://store.steampowered.com/app/1533390/Gorilla_Tag/">Steam</a>
+            </div>
+          </article>
 
-    </div>
+          <article class="game-entry">
+            <h3>Arashi: Castles of Sin - Final Cut</h3>
+              <img src="images/arashi.jpg" alt="Arashi: Castle of Sin - Final Cut" width="400">
+              <div class="platforms-box">
+                <a href="https://www.meta.com/experiences/arashi-castles-of-sin-final-cut/6574695042540825/">Meta Quest</a>
+                <a href="https://store.steampowered.com/app/2434420/Arashi_Castles_of_Sin__Final_Cut/">Steam</a>
+                <a href="https://store.playstation.com/en-us/product/UP2533-PPSA15261_00-ARASHISHINOBISTD">PSVR2</a>
+              </div>
+          </article>
+
+          <article class="game-entry">
+            <h3>Please, Don't Touch Anything VR</h3>
+            <img src="images/pdta.jpg" alt="Please, Don't Touch Anything 3D" width="400">
+            <div class="platforms-box">
+              <a href="https://www.meta.com/experiences/please-dont-touch-anything/2706567592751319/?srsltid=AfmBOoo75iD21JCKkTvj8nVQQ4jhrG8TqK7vhRKlSYIlFNxE4MNkrL_4">Meta Quest</a>
+              <a href="https://store.steampowered.com/app/529590/Please_Dont_Touch_Anything_3D/">Steam</a>
+              <a href="https://store-global.picoxr.com/global/detail/1/7319548997105041413">Pico</a>
+            </div>
+          </article>
+
+      </section>
+      <section>
+        <h2>Enterprise Work</h2>
+        <article class="game-entry">
+          <h3>Facebook Datacenter Virtual Training</h3>
+           <p>VR Training modules used to teach employees about equipment in its datacenters</p>
+          <div class="platforms-box">
+            <a href="https://enterprise.forwardxp.com/project/facebook-datacenter-virtual-training/">More Info</a>
+          </div>
+        </article>
+  
+        <article class="game-entry">
+          <h3>FIM Speedway Grand Prix app</h3>
+          <p>A virtual space for live-streaming races and chatting with other fans of the FIM Speedway World Championship. </p>
+          <div class="platforms-box">
+            <a href="https://fimspeedway.com/metaverse#">More Info</a>
+          </div>
+        </article>
+      </section>
+      
+    </main>
   </body>
 </html>

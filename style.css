@@ -1,25 +1,60 @@
+
+:root {
+    --primary-color:rgb(78, 124, 255);
+    --secondary-color:rgb(168, 191, 255);
+    --contrast-color: rgb(14, 31, 74);
+    --text-color: white;
+    --title-font: "Geo", "Courier New", monospace;
+    --paragraph-font: monospace;
+}
+
 body {
-  background-image: linear-gradient(to right, rgb(78, 124, 255) , rgb(189, 131, 249) );
+  background-image: linear-gradient(to bottom, var(--primary-color) , rgb(189, 131, 249) );
   margin: 0;
   padding: 0;
 }
-h1, h2, p {
+
+h2 {
   text-align: center;
-  color: #FFF;
-  font-family: 'Oxygen', sans-serif;
+  /* background-image: radial-gradient(var(--contrast-color) , var(--primary-color) ); */
+  background-color: var(--contrast-color);
+  color: var(--text-color);
+  
+  font-family: var(--title-font);
+  font-weight: normal;
+  /* animation-duration: 2s;
+  animation-name: slide-in;  */
+}
+
+h1, h3{
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--title-font);
+  font-size: x-large;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px var(--contrast-color);
+}
+
+p {
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--paragraph-font);
   font-weight: 300;
 }
 
 nav {
   box-sizing: border-box;
-  background-image: linear-gradient(to right, rgb(197, 217, 249), rgb(255, 217, 255));
-  overflow: auto;
-  padding: 18px 50px;
+  background-color: var(--contrast-color);
   position: relative;
   top: 0;
   width: 100%;
   z-index: 999;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  font-family: var(--title-font);
+  
 }
 
 ul {
@@ -34,8 +69,8 @@ ol {
 
 th
 {
-  color: #FFF;
-  font-family: 'Oxygen', sans-serif;
+  color: var(--text-color);
+  font-family: var(--paragraph-font);
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -43,9 +78,9 @@ th
 }
 
 li {
-  color: #FFF;
+  color: var(--text-color);
   display: list-item;
-  font-family: 'Oxygen', sans-serif;
+  font-family: var(--paragraph-font);
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -68,25 +103,87 @@ figure {
   margin-right: auto;
 }
 figcaption {
-  color: #FFF;
-  font-family: 'Oxygen', sans-serif;
+  color: var(--text-color);
+  font-family: var(--paragraph-font);
 
 }
-#title {
-  font-family: 'URW Chancery L', cursive;
-}
+
 .centered {
   text-align: center;
 }
 
-.active {
-  color: #97a9c4;
+.nav-inactive{
+  color: var(--text-color);
+  flex: 1 1 auto;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.nav-active {
+  flex: 1 1 auto;
+  color: var(--contrast-color);
+  background-color:  var(--primary-color);
+  text-decoration: none;
+  line-height: 2;
+}
+
+.game-entry {
+  background-color:rgba(245, 208, 255, 0.381);
+  width: 560px;
+  border-radius: 3%;
+  margin: 30px 0px;
+
+  align-content: center;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  
+  font-family: var(--title-font);
+}
+
+.game-entry p {
+  color: var(--text-color);
+  text-shadow: px 2px 2px var(--contrast-color);
+  padding: 30px;
+  background-color: var(--primary-color);
+  margin: 0% 5%;
+}
+
+.platforms-box {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content:center;
+  padding: 2%;
+}
+
+.platforms-box a {
+   padding: 0% 2%;
+   font-family: var(--paragraph-font);
+   text-decoration: none;
+   background-color: var(--primary-color);
+   color: var(--contrast-color);
+   border-color: var(--contrast-color);
+   border-style: outset;
+   margin: 0px 10px;
 }
 
 .findme {
   color: #493ba1;
-  font-family: 'URW Chancery L', cursive;
+  font-family: var(--title-font);
   padding: 5px 5px 5px 5px;
   background-image: linear-gradient(to right, rgb(197, 217, 249), rgb(255, 217, 255));
   text-align: center;
 }
+
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+
