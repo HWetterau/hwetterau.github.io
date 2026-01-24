@@ -132,13 +132,12 @@ figcaption {
   width: 90%;
   max-width: 560px;
   border-radius: 3%;
-  margin: auto;
-  margin-bottom: 3%;
+  margin: 3% auto;
 
   align-content: center;
   text-align: center;
-  align-self: center;
-  justify-self: center;
+  /* align-self: center; */
+  /* justify-self: center; */
   
   font-family: var(--title-font);
 }
@@ -148,7 +147,7 @@ figcaption {
   text-shadow: px 2px 2px var(--contrast-color);
   padding: 5%;
   background-color: var(--primary-color);
-  margin: 0% 5%;
+  margin: auto 5%;
 }
 
 .platforms-box {
@@ -167,7 +166,7 @@ figcaption {
    color: var(--contrast-color);
    border-color: var(--contrast-color);
    border-style: outset;
-   margin: 0 3%;
+   margin: auto 3%;
 }
 
 .findme {
