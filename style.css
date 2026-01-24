@@ -132,6 +132,7 @@ figcaption {
   width: 90%;
   max-width: 560px;
   border-radius: 3%;
+  margin: auto;
   margin-bottom: 3%;
 
   align-content: center;
@@ -166,7 +167,7 @@ figcaption {
    color: var(--contrast-color);
    border-color: var(--contrast-color);
    border-style: outset;
-   margin: 0 5%;
+   margin: 0 3%;
 }
 
 .findme {
